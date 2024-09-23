@@ -12,6 +12,13 @@ public class Driver {
         
         System.out.println();
         
+        System.out.println("Creating a cylinder with the default constructor!");
+        Cylinder cylinder1 = new Cylinder();
+        PrintCylinder(cylinder1);
+        
+        System.out.println();
+        
+        
         System.out.println("Creating a cylinder with a parameterized constructor!");
         Cylinder cylinder2 = new Cylinder(2, 2);
         PrintCylinder(cylinder2);
