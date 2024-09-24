@@ -1,3 +1,10 @@
+/**
+ * Evital Heyl
+ * 1-3
+ * September 23rd, 2024
+ * Problem Set 2A
+ */
+
 public class Driver {
     public static void main(String[] args) {   
         System.out.println("Creating a circle with the default constructor!");
@@ -7,7 +14,7 @@ public class Driver {
         System.out.println();
         
         System.out.println("Creating a circle with a parameterized constructor!");
-        Circle circle2 = new Circle(2);
+        Circle circle2 = new Circle(5);
         PrintCircle(circle2);
         
         System.out.println();
@@ -17,7 +24,6 @@ public class Driver {
         PrintCylinder(cylinder1);
         
         System.out.println();
-        
         
         System.out.println("Creating a cylinder with a parameterized constructor!");
         Cylinder cylinder2 = new Cylinder(2, 2);
