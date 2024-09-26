@@ -45,11 +45,16 @@ public class StringTools {
         return newWord;
     }
 
-   /**
-    * 
+
      public boolean frontAgain (String str, int n) {
+         int Length = str.length();
+         String firstLetters = str.substring(0, n);
+         String lastLetters = str.substring(Length-n);
+         boolean same = firstLetters.equals(lastLetters);
+         return same;
+         
+         
         
     }
-    */
     
 }
