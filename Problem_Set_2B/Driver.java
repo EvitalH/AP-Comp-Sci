@@ -36,7 +36,7 @@ public class Driver {
          
 
         System.out.println("\nSwap last two letters test cases");
-        System.out.print("Enter a word: ");
+        System.out.print("Enter a word (2 or more characters): ");
         String answer4 = input.nextLine();
         System.out.println("Your new word is: " +
             sTools.swapLastTwo(answer4));
