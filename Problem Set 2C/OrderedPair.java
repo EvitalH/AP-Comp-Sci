@@ -14,9 +14,9 @@ public class OrderedPair {
         Y = 0;
     }
 
-    OrderedPair (double x, double y) {
-        X = x;
-        Y = y;
+    OrderedPair (double newX, double newY) {
+        X = newX;
+        Y = newY;
     }
 
     public String toString()  {

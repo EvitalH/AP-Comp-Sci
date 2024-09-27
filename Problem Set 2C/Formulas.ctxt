@@ -1,4 +1,14 @@
 #BlueJ class context
 comment0.target=Formulas
 comment0.text=\r\n\ Evital\ Heyl\r\n\ 1-3\r\n\ Sept.\ 27th,\ 2024\r\n\ Problem\ Set\ 2C\r\n
-numComments=1
+comment1.params=a\ b\ c
+comment1.target=OrderedPair\ findQuadraticRoots(double,\ double,\ double)
+comment2.params=A\ B
+comment2.target=double\ findSlope(OrderedPair,\ OrderedPair)
+comment3.params=A\ B
+comment3.target=OrderedPair\ findMidpoint(OrderedPair,\ OrderedPair)
+comment4.params=a\ d\ k
+comment4.target=double\ findArithmeticSeriesSum(double,\ double,\ int)
+comment5.params=a\ r\ k
+comment5.target=double\ findGeometricSeriesSum(double,\ double,\ int)
+numComments=6
