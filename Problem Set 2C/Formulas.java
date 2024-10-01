@@ -45,6 +45,13 @@ public class Formulas {
         Sum = a * ( (1 - Math.pow(r, k) ) / (1-r) );
         return Sum;
     }
+    
+    public static int rollDie (int sides) {
+        int roll;
+        roll = (int) (Math.random() * (sides)) + 1;
+        return roll;
+    }
+
 
 
 

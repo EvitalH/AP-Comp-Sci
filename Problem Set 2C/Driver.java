@@ -24,7 +24,6 @@ public class Driver {
 
         Scanner input = new Scanner(System.in);
 
-        /**
         //Quadratic Formula
         System.out.println("QUADRATIC FORMULA: Find the roots of ax^2 + bx + c. Enter a, b and c: ");
         System.out.print("a: ");
@@ -71,8 +70,7 @@ public class Driver {
         System.out.println("The midpoint between " + orderedPairAMidpoint + " and " +
         orderedPairBMidpoint + " is " + Formulas.findMidpoint (orderedPairAMidpoint,orderedPairBMidpoint));
         //-------------------------------
-         */
-        
+
         //SUM OF AN ARITHMETIC SERIES
         System.out.println("\nSUM OF AN ARITHMETIC SERIES");
         System.out.print("Number of terms: ");
@@ -82,8 +80,8 @@ public class Driver {
         System.out.print("Changes by: ");
         double arithmeticChange = input.nextDouble();
         System.out.println("The sum of the first " + numberOfTermsArith + " terms of an arithmetic series that starts with " +
-            firstTermValueArith + " and changes by " + arithmeticChange + " is " +
-            Formulas.findArithmeticSeriesSum(firstTermValueArith, arithmeticChange, numberOfTermsArith));
+        firstTermValueArith + " and changes by " + arithmeticChange + " is " +
+        Formulas.findArithmeticSeriesSum(firstTermValueArith, arithmeticChange, numberOfTermsArith));
         //---------------------------------
 
         //Sum of a geometric series
@@ -95,12 +93,18 @@ public class Driver {
         System.out.print("Changes by: ");
         double geometricChange = input.nextDouble();
         System.out.println("The sum of the first " + numberOfTermsGeo + " terms of a geometric series that starts with " +
-            firstTermValueGeo + " and changes by " + geometricChange + " is " +
-            Formulas.findGeometricSeriesSum(firstTermValueGeo, geometricChange, numberOfTermsGeo));
+        firstTermValueGeo + " and changes by " + geometricChange + " is " +
+        Formulas.findGeometricSeriesSum(firstTermValueGeo, geometricChange, numberOfTermsGeo));
         //---------------------------------
-
+         
+        //Die roller
+        System.out.println("\nDIE ROLLER");
+        System.out.print("How many sides does your die have? ");
+        int numberOfSides = input.nextInt();
+        System.out.println("Rolling a " + numberOfSides +
+        "-sided die... you got a " + Formulas.rollDie(numberOfSides) + "!");
         
-       
+
 
     }
 }
