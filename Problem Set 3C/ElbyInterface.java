@@ -1,3 +1,7 @@
+//Evital Heyl
+//1-3
+//Problem Set 3C
+
 import java.util.Scanner;
 
 /**

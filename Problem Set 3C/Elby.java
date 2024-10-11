@@ -1,3 +1,7 @@
+//Evital Heyl
+//1-3
+//Problem Set 3C
+
 public class Elby {
     /**
      * Get a default greeting
@@ -100,7 +104,7 @@ public class Elby {
      * @param goal the string to search for
      * @param startPos the character of the string to begin the search at
      * @return the index of the first occurrence of goal in statement or -1 if it's
-     * 	not found
+     *     not found
      */
 
     public int findKeyword(String statement, String goal, int startPos) {
@@ -204,7 +208,7 @@ public class Elby {
      * "Why do you <something> me?"
      *
      * @param statement the user statement, assumed to contain "I" followed by
-     * 	something "you"
+     *     something "you"
      * @return the transformed statement
      */
     public String transformIMeStatement(String statement) {
