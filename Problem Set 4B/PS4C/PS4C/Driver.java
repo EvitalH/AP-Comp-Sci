@@ -9,7 +9,8 @@ public class Driver {
 
     public static void main (String[] args) {
         //driverSentimentVal ();
-        System.out.println(Review.totalSentiment("review2.txt"));
+        System.out.println(Review.totalSentiment("sample.txt"));
+        System.out.println(Review.starRating("sample.txt"));
     }
 
     static void driverSentimentVal () {

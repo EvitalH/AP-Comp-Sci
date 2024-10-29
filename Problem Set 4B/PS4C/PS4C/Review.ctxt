@@ -24,4 +24,6 @@ comment7.target=java.lang.String\ randomAdjective()
 comment7.text=\ \r\n\ Randomly\ picks\ a\ positive\ or\ negative\ adjective\ and\ returns\ it.\r\n
 comment8.params=fileName
 comment8.target=double\ totalSentiment(java.lang.String)
-numComments=9
+comment9.params=fileName
+comment9.target=int\ starRating(java.lang.String)
+numComments=10
