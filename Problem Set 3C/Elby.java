@@ -31,7 +31,7 @@ public class Elby {
         } else if (findKeyword(statement, "I want", 0) >= 0) {
             response = transformIWantStatement(statement);
         } else if (findKeyword(statement, "I", 0) >= 0
-        && findKeyword(statement, "you", 0) >= 0) {
+        && findKeyword(statement, "you", findKeyword(statement, "I", 0)) >= 0) {
             response = transformIMeStatement(statement);
         }
         else if(findKeyword(statement, "mother", 0) >= 0
