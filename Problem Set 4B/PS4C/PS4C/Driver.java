@@ -9,8 +9,9 @@ public class Driver {
 
     public static void main (String[] args) {
         //driverSentimentVal ();
-        System.out.println(Review.totalSentiment("sample.txt"));
-        System.out.println(Review.starRating("sample.txt"));
+        //System.out.println(Review.totalSentiment("McdonaldsReview.txt"));
+        //System.out.println(Review.starRating("McdonaldsReview.txt"));
+        System.out.println(Review.fakeReview("McdonaldsReview.txt"));
     }
 
     static void driverSentimentVal () {
@@ -21,7 +22,8 @@ public class Driver {
             String word = input.nextLine ();
             System.out.println ("Your word has the value of " + Review.sentimentVal (word));
             if (Review.sentimentVal(word) != 0) i++;
-        }              
+        }   
+        input.close();
     }
 
    
