@@ -174,39 +174,43 @@ public class Review {
         value += Review.sentimentVal(file);
         return value;
     }
-    
+
     public static int starRating(String fileName) {
         double baseRating = totalSentiment(fileName);
         baseRating = baseRating/2.5;
         baseRating = Math.max (baseRating, 0);
         baseRating = Math.min (baseRating, 5);
         return (int)baseRating;
-        
-        
+
     }
-    
     public static String fakeReview(String fileName) {
         String file = textToString(fileName);
         int indexOfStar = 0;
         String SPACE = " ";
-        
+
         while((indexOfStar = file.indexOf("*")) >= 0) {
             int indexOfSpace = file.indexOf(SPACE, indexOfStar);
             String word = file.substring(indexOfStar + 1, indexOfSpace);
             word = removePunctuation(word);
-            System.out.println(word);
             String firstPart = file.substring(0, indexOfStar);
             String lastPart = file.substring(indexOfSpace);
             String randomWord ="";
-            
-            
-             if (sentimentVal(word) <= 0) {
-                randomWord = randomPositiveAdj();
-            } else {
+
+            if (sentimentVal(word) <= 0) {
                 randomWord = randomNegativeAdj();
+                while (sentimentVal(word) < sentimentVal(randomWord)){
+                    randomWord = randomNegativeAdj();
+
+                }
+                System.out.println (randomWord + "-");
+            } else {
+                while(sentimentVal(word) > sentimentVal(randomWord)) {
+                    randomWord = randomPositiveAdj();
+
+                }
+                System.out.println (randomWord + "+");
             }
-             
-            
+
             
             file = firstPart + randomWord + getPunctuation(file.substring(indexOfStar + 1, indexOfSpace)) + lastPart;
         }    
