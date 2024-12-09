@@ -2,11 +2,11 @@
 comment0.target=Grid
 comment0.text=\r\n\ Evital\ Heyl\r\n\ 1-3\r\n\ Problem\ Set\ 8A\r\n
 comment1.params=
-comment1.target=Grid()
+comment1.target=void\ instantiate()
 comment2.params=
 comment2.target=void\ draw()
 comment3.params=row\ column\ play
-comment3.target=void\ add(int,\ int,\ java.lang.String)
+comment3.target=boolean\ action(int,\ int,\ java.lang.String)
 comment4.params=move
 comment4.target=int\ getRow(java.lang.String)
 comment5.params=move
