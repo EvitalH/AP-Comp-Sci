@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=FractionDriver
 comment0.text=\r\n\ Evital\ Heyl\r\n\ 1-3\r\n\ Problem\ Set\ 5A\r\n
-comment1.params=
-comment1.target=void\ main()
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
 numComments=2
