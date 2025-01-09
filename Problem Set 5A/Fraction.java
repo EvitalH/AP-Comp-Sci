@@ -102,7 +102,6 @@ public class Fraction {
         else Num = NumOne - NumTwo;
         
         Fraction myFraction = new Fraction(Num, Denom);
-        myFraction.reduce();
         return myFraction;
         
     }
@@ -120,7 +119,8 @@ public class Fraction {
     //HELPER METHODS
     
     public static int greatestCommonFactor (int a, int b) {
-        
+        a = Math.abs(a);
+        b = Math.abs(b);
         while(a != b) {
             int largerNumber = Math.max(a, b);
             if (largerNumber == a) a = a - b;
