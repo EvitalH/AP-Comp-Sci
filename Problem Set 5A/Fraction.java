@@ -67,7 +67,6 @@ public class Fraction {
     }
     
     public void setNum (int n) {
-        checkZero(n);
         numerator = n;
     }
     

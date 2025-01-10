@@ -6,9 +6,27 @@
  */
 public class FractionDriver {
     public static void main (String[] args) {
-        Fraction myFractionOne = new Fraction (-1, 2);
-        Fraction myFractionTwo= new Fraction (1, 4);
+       PI();
 
-        System.out.println( Fraction.add(myFractionOne, myFractionTwo));
+        
+
+    }
+    
+    public static void PI () {
+        Fraction MILU = new Fraction(355, 113);
+        final double EPSILON = Math.abs( Math.PI - MILU.toDouble() );
+        
+        Fraction approx = new Fraction (MILU);
+        
+        while (Math.abs(Math.PI - approx.toDouble()) >= EPSILON) {
+            if (Math.PI > approx.toDouble()) {
+                approx.setNum(approx.getNum() + 1);
+            } else {
+                approx.setDenom(approx.getDenom() + 1);
+            }
+        }
+        
+        System.out.println(approx);
+
     }
 }
