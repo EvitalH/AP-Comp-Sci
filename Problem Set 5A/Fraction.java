@@ -10,8 +10,8 @@ public class Fraction {
     private int denominator;
     
     public Fraction () { //default
-        numerator = 1;
-        denominator = 1;
+        numerator = (int)(Math.random() * 10);
+        denominator = (int)(Math.random() * 10 + 1);
     }
     
     public Fraction (int num, int den) { //custom
@@ -112,6 +112,15 @@ public class Fraction {
     
     public static Fraction subtract (Fraction fracOne, Fraction fracTwo) {
         return AddOrSubtract(fracOne, fracTwo, "subtract");
+    }
+    
+    public boolean equals(Fraction f) {
+        if (f.getNum() == this.getNum()) {
+            if(f.getDenom() == this.getDenom()) {
+                return true;
+            }
+        }
+        return false;
     }
     
     
