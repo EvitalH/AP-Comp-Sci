@@ -10,10 +10,18 @@ public class Driver {
     
     public static void main (String[] args) {
         ArrayList<Integer> one = new ArrayList<Integer>();
-        one.add(1);
+        one.add(2);
         one.add(2);
         one.add(3);
-        System.out.println (BigIntsSum(one ,one));
+        
+        ArrayList<Integer> two = new ArrayList<Integer>();
+        two.add(1);
+        two.add(9);
+        two.add(6);
+        two.add(4);
+        two.add(3);
+        
+        System.out.println (BigIntsSum(one ,two));
     }
     
     public static ArrayList<Integer>  primeNumbers ( int n ) {
@@ -54,9 +62,9 @@ public class Driver {
     
     public static ArrayList<Integer> BigIntsSum (ArrayList<Integer> a,ArrayList<Integer> b ) {
         ArrayList<Integer> answer = new ArrayList<Integer>();
-        answer.add(0);
         boolean carry = false;
-        for (int i = 1; i < a.size() || i < b.size(); i++) {
+        
+        for (int i = 1; i <= a.size() && i <= b.size(); i++) {
             
             int sum = a.get(a.size() - i) + b.get(b.size() - i);
             if(carry) sum ++;
@@ -64,12 +72,34 @@ public class Driver {
             if (sum > 9) {
                 carry = true;
                 sum = sum -10;
-            }
+            } else carry = false;
             
-            answer.set(0, sum);
+            answer.add(0, sum);
         }
+        
+        
+        
+        ArrayList<Integer> largest;
+        if(a.size() >= b.size()) largest = a;
+        else largest = b;
+        
+        for (int j = Math.abs(a.size() - b.size()) - 1; j >= 0; j--) {
+            int didget = largest.get(j);
+            if(carry) didget++;
+            
+            if (didget > 9) {
+                carry = true;
+                didget = didget - 10;
+            } else carry = false;
+            
+            answer.add(0, didget);          
+        }
+        
+        if(carry) answer.add(0, 1);
         
         return answer;
     }
+    
+    
  
 }
