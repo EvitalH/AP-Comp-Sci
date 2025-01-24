@@ -10,16 +10,15 @@ public class Driver {
     
     public static void main (String[] args) {
         ArrayList<Integer> one = new ArrayList<Integer>();
-        one.add(2);
-        one.add(2);
-        one.add(3);
+        one.add(1);
+        
         
         ArrayList<Integer> two = new ArrayList<Integer>();
-        two.add(1);
         two.add(9);
-        two.add(6);
-        two.add(4);
-        two.add(3);
+        two.add(9);
+        two.add(9);
+        two.add(9);
+        two.add(9);
         
         System.out.println (BigIntsSum(one ,two));
     }
