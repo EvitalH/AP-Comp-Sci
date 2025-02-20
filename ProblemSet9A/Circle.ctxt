@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Circle
+comment0.text=\r\n\ Evital\ Heyl\r\n
+comment1.params=color\ filled\ radius
+comment1.target=Circle(java.lang.String,\ boolean,\ double)
+comment2.params=
+comment2.target=double\ getRadius()
+comment3.params=radius
+comment3.target=void\ setRadius(double)
+numComments=4
